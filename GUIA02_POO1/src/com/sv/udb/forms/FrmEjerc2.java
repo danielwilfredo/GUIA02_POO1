@@ -133,7 +133,7 @@ if(evt.getKeyCode() == KeyEvent.VK_ENTER)
         this.isCant= !this.isCant;
     }
     else {
-        JOptionPane.showMessageDialog(this, "El texto esta vacio");
+        JOptionPane.showMessageDialog(this, "El texto esta vacio.");
     }
 }
 else if (evt.getKeyCode() == KeyEvent.VK_X)
