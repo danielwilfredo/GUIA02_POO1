@@ -30,8 +30,30 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar1 = new javax.swing.JMenuBar();
+        btnEjercicio1 = new javax.swing.JMenu();
+        btnEjercicio2 = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Guia ejercicios 2 ::: Wilfredo Granados ");
+
+        btnEjercicio1.setText("Ejercicio 1");
+        btnEjercicio1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEjercicio1MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(btnEjercicio1);
+
+        btnEjercicio2.setText("Ejercicio 2");
+        btnEjercicio2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEjercicio2MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(btnEjercicio2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -41,11 +63,22 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGap(0, 258, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnEjercicio1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEjercicio1MouseClicked
+  FrmEjerc1 mostrar = new FrmEjerc1();
+       mostrar.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEjercicio1MouseClicked
+
+    private void btnEjercicio2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEjercicio2MouseClicked
+FrmEjerc2 mostra2 = new FrmEjerc2();
+mostra2.setVisible(true);
+// TODO add your handling code here:
+    }//GEN-LAST:event_btnEjercicio2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -83,5 +116,8 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu btnEjercicio1;
+    private javax.swing.JMenu btnEjercicio2;
+    private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
