@@ -43,7 +43,7 @@ public class Ejercicio1 {
             }
             
         } catch (Exception e) {
-            System.out.println("Erro en el ejercicio 1: "+ e.getMessage());
+            System.out.println("Error en el ejercicio 1: "+ e.getMessage());
         }
         return resp;
     }

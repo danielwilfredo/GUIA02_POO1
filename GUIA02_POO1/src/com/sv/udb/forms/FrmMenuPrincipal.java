@@ -18,6 +18,7 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
      */
     public FrmMenuPrincipal() {
         initComponents();
+        this.setLocationRelativeTo(null);
      
     }
 
@@ -33,6 +34,8 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         btnEjercicio1 = new javax.swing.JMenu();
         btnEjercicio2 = new javax.swing.JMenu();
+        btnEjercicio3 = new javax.swing.JMenu();
+        Ejercicio4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Guia ejercicios 2 ::: Wilfredo Granados ");
@@ -52,6 +55,12 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
             }
         });
         jMenuBar1.add(btnEjercicio2);
+
+        btnEjercicio3.setText("Ejercicio 3");
+        jMenuBar1.add(btnEjercicio3);
+
+        Ejercicio4.setText("Ejercicio 4");
+        jMenuBar1.add(Ejercicio4);
 
         setJMenuBar(jMenuBar1);
 
@@ -116,8 +125,10 @@ mostra2.setVisible(true);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Ejercicio4;
     private javax.swing.JMenu btnEjercicio1;
     private javax.swing.JMenu btnEjercicio2;
+    private javax.swing.JMenu btnEjercicio3;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }

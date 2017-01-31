@@ -5,6 +5,8 @@
  */
 package com.sv.udb.forms;
 
+import com.sv.udb.clases.Ejercicio1;
+
 /**
  *
  * @author DanielWilfredo
@@ -120,7 +122,12 @@ public class FrmEjerc1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-        // TODO add your handling code here:
+ Ejercicio1 ejer = new Ejercicio1();
+int numeBase = Integer.parseInt(txtNumBase.getText());
+int numePote = Integer.parseInt(txtNumPote.getText());
+ ejer.setNumeBase(numeBase);
+ ejer.setNumePote(numePote);
+ 
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
