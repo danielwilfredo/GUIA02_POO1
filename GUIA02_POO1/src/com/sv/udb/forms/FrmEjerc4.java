@@ -26,7 +26,7 @@ public class FrmEjerc4 extends javax.swing.JFrame {
         lblcod4.setVisible(false);
     }
      Ejercicio4 ejer4 = new Ejercicio4();
-      int numeroActual=0;
+      int numeConta=0;
     String pin="";
      
     /**
@@ -258,9 +258,9 @@ public class FrmEjerc4 extends javax.swing.JFrame {
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
 if(this.ejer4.getNumeInte()>= 1)
         {
-            numeroActual += 1;
+            numeConta += 1;
             pin += 4;
-            switch (numeroActual) {
+            switch (numeConta) {
                     case 1:
                          lblcod1.setVisible(true);
                     break;
@@ -276,12 +276,12 @@ if(this.ejer4.getNumeInte()>= 1)
                 default:
                     
             }
-            if(numeroActual == 4)
+            if(numeConta == 4)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
                     JOptionPane.showMessageDialog(this, "Codigo correcto");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";
 
                 }
@@ -290,7 +290,7 @@ if(this.ejer4.getNumeInte()>= 1)
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
                     JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
                     lblcod1.setVisible(false);
@@ -309,9 +309,9 @@ if(this.ejer4.getNumeInte()>= 1)
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
  if(this.ejer4.getNumeInte()>= 1)
         {
-            numeroActual += 1;
+            numeConta += 1;
             pin += 1;
-            switch (numeroActual) {
+            switch (numeConta) {
                     case 1:
                          lblcod1.setVisible(true);
                     break;
@@ -327,12 +327,12 @@ if(this.ejer4.getNumeInte()>= 1)
                 default:
                     
             }
-            if(numeroActual == 4)
+            if(numeConta == 4)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
                     JOptionPane.showMessageDialog(this, "Codigo correcto");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";
 
                 }
@@ -341,7 +341,7 @@ if(this.ejer4.getNumeInte()>= 1)
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
                     JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
                     lblcod1.setVisible(false);
@@ -362,9 +362,9 @@ if(this.ejer4.getNumeInte()>= 1)
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
          if(this.ejer4.getNumeInte()>= 1)
         {
-            numeroActual += 1;
+            numeConta += 1;
             pin += 0;
-            switch (numeroActual) {
+            switch (numeConta) {
                     case 1:
                          lblcod1.setVisible(true);
                     break;
@@ -380,12 +380,12 @@ if(this.ejer4.getNumeInte()>= 1)
                 default:
                     
             }
-            if(numeroActual == 4)
+            if(numeConta == 4)
             {
            if(this.ejer4.getPin().equals(pin))
                 {
                     JOptionPane.showMessageDialog(this, "Codigo correcto");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";
 
                 }
@@ -394,7 +394,7 @@ if(this.ejer4.getNumeInte()>= 1)
                     int res = this.ejer4.getNumeInte(); 
                     res = res -1;
                     JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
                     lblcod1.setVisible(false);
@@ -413,9 +413,9 @@ if(this.ejer4.getNumeInte()>= 1)
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
     if(this.ejer4.getNumeInte()>= 1)
         {
-            numeroActual += 1;
+            numeConta += 1;
             pin += 7;
-            switch (numeroActual) {
+            switch (numeConta) {
                     case 1:
                          lblcod1.setVisible(true);
                     break;
@@ -431,12 +431,12 @@ if(this.ejer4.getNumeInte()>= 1)
                 default:
                     
             }
-            if(numeroActual == 4)
+            if(numeConta == 4)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
                     JOptionPane.showMessageDialog(this, "Codigo correcto");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";
 
                 }
@@ -445,7 +445,7 @@ if(this.ejer4.getNumeInte()>= 1)
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
                     JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
                     lblcod1.setVisible(false);
@@ -464,9 +464,9 @@ if(this.ejer4.getNumeInte()>= 1)
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
         if(this.ejer4.getNumeInte()>= 1)
         {
-            numeroActual += 1;
+            numeConta += 1;
             pin += 2;
-            switch (numeroActual) {
+            switch (numeConta) {
                     case 1:
                          lblcod1.setVisible(true);
                     break;
@@ -482,12 +482,12 @@ if(this.ejer4.getNumeInte()>= 1)
                 default:
                     
             }
-            if(numeroActual == 4)
+            if(numeConta == 4)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
                     JOptionPane.showMessageDialog(this, "Codigo correcto");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";
 
                 }
@@ -496,7 +496,7 @@ if(this.ejer4.getNumeInte()>= 1)
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
                     JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
                     lblcod1.setVisible(false);
@@ -515,9 +515,9 @@ if(this.ejer4.getNumeInte()>= 1)
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
       if(this.ejer4.getNumeInte()>= 1)
         {
-            numeroActual += 1;
+            numeConta += 1;
             pin += 3;
-            switch (numeroActual) {
+            switch (numeConta) {
                     case 1:
                          lblcod1.setVisible(true);
                     break;
@@ -533,12 +533,12 @@ if(this.ejer4.getNumeInte()>= 1)
                 default:
                     
             }
-            if(numeroActual == 4)
+            if(numeConta == 4)
             {
                     if(this.ejer4.getPin().equals(pin))
                 {
                     JOptionPane.showMessageDialog(this, "Codigo correcto");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";
 
                 }
@@ -547,7 +547,7 @@ if(this.ejer4.getNumeInte()>= 1)
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
                     JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
-                    numeroActual =0;
+                    numeConta =0;
                       pin= "";             
                     this.ejer4.setNumeInte(res);
                     lblcod1.setVisible(false);
@@ -566,9 +566,9 @@ if(this.ejer4.getNumeInte()>= 1)
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
       if(this.ejer4.getNumeInte()>= 1)
         {
-            numeroActual += 1;
+            numeConta += 1;
             pin += 5;
-            switch (numeroActual) {
+            switch (numeConta) {
                     case 1:
                          lblcod1.setVisible(true);
                     break;
@@ -584,12 +584,12 @@ if(this.ejer4.getNumeInte()>= 1)
                 default:
                     
             }
-            if(numeroActual == 4)
+            if(numeConta == 4)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
                     JOptionPane.showMessageDialog(this, "Codigo correcto");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";
 
                 }
@@ -598,7 +598,7 @@ if(this.ejer4.getNumeInte()>= 1)
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
                     JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
                     lblcod1.setVisible(false);
@@ -617,9 +617,9 @@ if(this.ejer4.getNumeInte()>= 1)
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
        if(this.ejer4.getNumeInte()>= 1)
         {
-            numeroActual += 1;
+            numeConta += 1;
             pin += 6;
-            switch (numeroActual) {
+            switch (numeConta) {
                     case 1:
                          lblcod1.setVisible(true);
                     break;
@@ -635,12 +635,12 @@ if(this.ejer4.getNumeInte()>= 1)
                 default:
                     
             }
-            if(numeroActual == 4)
+            if(numeConta == 4)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
                     JOptionPane.showMessageDialog(this, "Codigo correcto");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";
 
                 }
@@ -649,7 +649,7 @@ if(this.ejer4.getNumeInte()>= 1)
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
                     JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
                     lblcod1.setVisible(false);
@@ -669,9 +669,9 @@ if(this.ejer4.getNumeInte()>= 1)
     private void btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActionPerformed
      if(this.ejer4.getNumeInte()>= 1)
         {
-            numeroActual += 1;
+            numeConta += 1;
             pin += 8;
-            switch (numeroActual) {
+            switch (numeConta) {
                     case 1:
                          lblcod1.setVisible(true);
                     break;
@@ -687,12 +687,12 @@ if(this.ejer4.getNumeInte()>= 1)
                 default:
                     
             }
-            if(numeroActual == 4)
+            if(numeConta == 4)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
                     JOptionPane.showMessageDialog(this, "Codigo correcto");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";
 
                 }
@@ -701,7 +701,7 @@ if(this.ejer4.getNumeInte()>= 1)
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
                     JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
-                    numeroActual =0;
+                    numeConta =0;
                    pin= "";             
                     this.ejer4.setNumeInte(res);
                     lblcod1.setVisible(false);
@@ -720,9 +720,9 @@ if(this.ejer4.getNumeInte()>= 1)
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
       if(this.ejer4.getNumeInte()>= 1)
         {
-            numeroActual += 1;
+            numeConta += 1;
             pin += 9;
-            switch (numeroActual) {
+            switch (numeConta) {
                     case 1:
                          lblcod1.setVisible(true);
                     break;
@@ -738,12 +738,12 @@ if(this.ejer4.getNumeInte()>= 1)
                 default:
                     
             }
-            if(numeroActual == 4)
+            if(numeConta == 4)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
                     JOptionPane.showMessageDialog(this, "Codigo correcto");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";
 
                 }
@@ -752,7 +752,7 @@ if(this.ejer4.getNumeInte()>= 1)
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
                     JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
-                    numeroActual =0;
+                    numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
                     lblcod1.setVisible(false);
