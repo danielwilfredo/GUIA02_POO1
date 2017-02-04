@@ -37,6 +37,8 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         btnEjercicio3 = new javax.swing.JMenu();
         btnEjercicio4 = new javax.swing.JMenu();
         btnEje5 = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        btnEjercicio7 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Guia ejercicios 2 ::: Wilfredo Granados ");
@@ -76,13 +78,24 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         });
         jMenuBar1.add(btnEje5);
 
+        jMenu1.setText("Ejercicio 6");
+        jMenuBar1.add(jMenu1);
+
+        btnEjercicio7.setText("Ejercicio 7");
+        btnEjercicio7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEjercicio7MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(btnEjercicio7);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 435, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -113,6 +126,11 @@ FrmEjerc5 ejer5 = new FrmEjerc5();
 ejer5.setVisible(true);
 // TODO add your handling code here:
     }//GEN-LAST:event_btnEje5MouseClicked
+
+    private void btnEjercicio7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEjercicio7MouseClicked
+FrmEjerc7 ejer7 = new FrmEjerc7();
+ejer7.setVisible(true);
+    }//GEN-LAST:event_btnEjercicio7MouseClicked
 
     /**
      * @param args the command line arguments
@@ -155,6 +173,8 @@ ejer5.setVisible(true);
     private javax.swing.JMenu btnEjercicio2;
     private javax.swing.JMenu btnEjercicio3;
     private javax.swing.JMenu btnEjercicio4;
+    private javax.swing.JMenu btnEjercicio7;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }

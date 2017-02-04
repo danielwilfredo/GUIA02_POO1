@@ -41,6 +41,19 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEje5MouseClicked"/>
           </Events>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ejercicio 6"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="btnEjercicio7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ejercicio 7"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEjercicio7MouseClicked"/>
+          </Events>
+        </Menu>
       </SubComponents>
     </Menu>
   </NonVisualComponents>
@@ -68,7 +81,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="435" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
