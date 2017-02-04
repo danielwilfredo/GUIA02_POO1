@@ -11,6 +11,25 @@ package com.sv.udb.clases;
  */
 public class Ejercicio4 {
     
-    private int pin;
-    
+  private String pin="0123";
+  private int numeInte=3;
+
+    public String getPin() {
+        return pin;
+    }
+
+    public void setPin(String pin) {
+        this.pin = pin;
+    }
+
+    public int getNumeInte() {
+        return numeInte;
+    }
+
+    public void setNumeInte(int numeInte) {
+        this.numeInte = numeInte;
+    }
+  
 }
+    
+

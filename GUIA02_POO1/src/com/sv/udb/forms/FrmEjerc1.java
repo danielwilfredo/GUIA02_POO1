@@ -6,6 +6,7 @@
 package com.sv.udb.forms;
 
 import com.sv.udb.clases.Ejercicio1;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -18,6 +19,7 @@ public class FrmEjerc1 extends javax.swing.JFrame {
      */
     public FrmEjerc1() {
         initComponents();
+               this.setLocationRelativeTo(null);
     }
 
     /**
@@ -122,12 +124,19 @@ public class FrmEjerc1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
- Ejercicio1 ejer = new Ejercicio1();
-int numeBase = Integer.parseInt(txtNumBase.getText());
-int numePote = Integer.parseInt(txtNumPote.getText());
- ejer.setNumeBase(numeBase);
- ejer.setNumePote(numePote);
- 
+ try {
+                int numb=0,nump,resultado;
+                numb = Integer.parseInt(txtNumBase.getText());
+                nump = Integer.parseInt(txtNumPote.getText());
+                Ejercicio1 eje1 = new Ejercicio1();
+                eje1.setNumeBase(numb);
+                eje1.setNumePote(nump);
+                resultado = eje1.getResultado();
+                JOptionPane.showMessageDialog(this, "El resultado es: " + resultado);
+                } 
+                catch (Exception e) {
+                    JOptionPane.showMessageDialog(this, e.getCause());
+        }
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**

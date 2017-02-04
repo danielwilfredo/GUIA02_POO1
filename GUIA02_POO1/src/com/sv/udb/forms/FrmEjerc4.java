@@ -5,6 +5,9 @@
  */
 package com.sv.udb.forms;
 
+import com.sv.udb.clases.Ejercicio4;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author DanielWilfredo
@@ -16,8 +19,16 @@ public class FrmEjerc4 extends javax.swing.JFrame {
      */
     public FrmEjerc4() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        lblcod1.setVisible(false);
+        lblcod2.setVisible(false);
+        lblcod3.setVisible(false);
+        lblcod4.setVisible(false);
     }
-
+     Ejercicio4 ejer4 = new Ejercicio4();
+      int numeroActual=0;
+    String pin="";
+     
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -32,15 +43,17 @@ public class FrmEjerc4 extends javax.swing.JFrame {
         btn4 = new javax.swing.JButton();
         btn5 = new javax.swing.JButton();
         btn6 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btn0 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         btn1 = new javax.swing.JButton();
-        lblcod = new javax.swing.JLabel();
         btn2 = new javax.swing.JButton();
-        jButton32 = new javax.swing.JButton();
+        lblcod1 = new javax.swing.JLabel();
+        lblcod2 = new javax.swing.JLabel();
+        lblcod4 = new javax.swing.JLabel();
+        lblcod3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Codigo Celular");
@@ -52,6 +65,11 @@ public class FrmEjerc4 extends javax.swing.JFrame {
         btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/3.png"))); // NOI18N
         btn3.setBorder(null);
         btn3.setContentAreaFilled(false);
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
 
         btn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/4.png"))); // NOI18N
         btn4.setBorder(null);
@@ -65,39 +83,59 @@ public class FrmEjerc4 extends javax.swing.JFrame {
         btn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/5.png"))); // NOI18N
         btn5.setBorder(null);
         btn5.setContentAreaFilled(false);
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
 
         btn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/6.png"))); // NOI18N
         btn6.setBorder(null);
         btn6.setContentAreaFilled(false);
-
-        jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/7.png"))); // NOI18N
-        jButton26.setBorder(null);
-        jButton26.setContentAreaFilled(false);
-        jButton26.addActionListener(new java.awt.event.ActionListener() {
+        btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton26ActionPerformed(evt);
+                btn6ActionPerformed(evt);
             }
         });
 
-        jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/8.png"))); // NOI18N
-        jButton27.setBorder(null);
-        jButton27.setContentAreaFilled(false);
-
-        jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/9.png"))); // NOI18N
-        jButton28.setBorder(null);
-        jButton28.setContentAreaFilled(false);
-
-        jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/0.png"))); // NOI18N
-        jButton29.setBorder(null);
-        jButton29.setContentAreaFilled(false);
-        jButton29.addActionListener(new java.awt.event.ActionListener() {
+        btn7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/7.png"))); // NOI18N
+        btn7.setBorder(null);
+        btn7.setContentAreaFilled(false);
+        btn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton29ActionPerformed(evt);
+                btn7ActionPerformed(evt);
+            }
+        });
+
+        btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/8.png"))); // NOI18N
+        btn.setBorder(null);
+        btn.setContentAreaFilled(false);
+        btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnActionPerformed(evt);
+            }
+        });
+
+        btn9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/9.png"))); // NOI18N
+        btn9.setBorder(null);
+        btn9.setContentAreaFilled(false);
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
+
+        btn0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/0.png"))); // NOI18N
+        btn0.setBorder(null);
+        btn0.setContentAreaFilled(false);
+        btn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn0ActionPerformed(evt);
             }
         });
 
         jLabel2.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
-        jLabel2.setText("Ingrese su digito:");
+        jLabel2.setText("Ingrese su pin:");
 
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1.png"))); // NOI18N
         btn1.setBorder(null);
@@ -108,63 +146,77 @@ public class FrmEjerc4 extends javax.swing.JFrame {
             }
         });
 
-        lblcod.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
-
         btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/2.png"))); // NOI18N
         btn2.setBorder(null);
         btn2.setContentAreaFilled(false);
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
 
-        jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Okok.png"))); // NOI18N
-        jButton32.setBorder(null);
-        jButton32.setContentAreaFilled(false);
+        lblcod1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/codigoo.png"))); // NOI18N
+
+        lblcod2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/codigoo.png"))); // NOI18N
+
+        lblcod4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/codigoo.png"))); // NOI18N
+
+        lblcod3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/codigoo.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(23, 23, 23))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(21, 21, 21)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addComponent(lblcod))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jButton26)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton27))
-                                    .addComponent(jButton29))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButton28)
-                                    .addComponent(jButton32)))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(btn7)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btn))
+                                    .addComponent(btn0))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn9))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                    .addComponent(btn4)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(btn5)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                    .addComponent(btn1)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(btn2)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btn3)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn3)))))
+                                .addComponent(lblcod1)
+                                .addGap(2, 2, 2)
+                                .addComponent(lblcod2))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(51, 51, 51)
+                                .addComponent(lblcod3)
+                                .addGap(2, 2, 2)
+                                .addComponent(lblcod4)))
+                        .addGap(8, 8, 8)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblcod)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblcod3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblcod2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblcod4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblcod1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn1)
@@ -177,23 +229,21 @@ public class FrmEjerc4 extends javax.swing.JFrame {
                     .addComponent(btn6))
                 .addGap(1, 1, 1)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton28)
-                    .addComponent(jButton26)
-                    .addComponent(jButton27))
+                    .addComponent(btn9)
+                    .addComponent(btn7)
+                    .addComponent(btn))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton32, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton29, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addComponent(btn0)
+                .addGap(16, 16, 16))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 15, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -206,24 +256,517 @@ public class FrmEjerc4 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        // TODO add your handling code here:
+if(this.ejer4.getNumeInte()>= 1)
+        {
+            numeroActual += 1;
+            pin += 4;
+            switch (numeroActual) {
+                    case 1:
+                         lblcod1.setVisible(true);
+                    break;
+                    case 2:
+                         lblcod2.setVisible(true);
+                    break;
+                    case 3:
+                         lblcod3.setVisible(true);
+                    break;
+                    case 4:
+                         lblcod4.setVisible(true);
+                    break;
+                default:
+                    
+            }
+            if(numeroActual == 4)
+            {
+                if(this.ejer4.getPin().equals(pin))
+                {
+                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    numeroActual =0;
+                    pin= "";
+
+                }
+                else
+                {
+                    int res = this.ejer4.getNumeInte();
+                    res = res -1;
+                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    numeroActual =0;
+                    pin= "";             
+                    this.ejer4.setNumeInte(res);
+                    lblcod1.setVisible(false);
+                    lblcod2.setVisible(false);
+                    lblcod3.setVisible(false);
+                    lblcod4.setVisible(false);
+                }
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+ if(this.ejer4.getNumeInte()>= 1)
+        {
+            numeroActual += 1;
+            pin += 1;
+            switch (numeroActual) {
+                    case 1:
+                         lblcod1.setVisible(true);
+                    break;
+                    case 2:
+                         lblcod2.setVisible(true);
+                    break;
+                    case 3:
+                         lblcod3.setVisible(true);
+                    break;
+                    case 4:
+                         lblcod4.setVisible(true);
+                    break;
+                default:
+                    
+            }
+            if(numeroActual == 4)
+            {
+                if(this.ejer4.getPin().equals(pin))
+                {
+                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    numeroActual =0;
+                    pin= "";
 
-         lblcod.setText("1");
-        
+                }
+                else
+                {
+                    int res = this.ejer4.getNumeInte();
+                    res = res -1;
+                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    numeroActual =0;
+                    pin= "";             
+                    this.ejer4.setNumeInte(res);
+                    lblcod1.setVisible(false);
+                    lblcod2.setVisible(false);
+                    lblcod3.setVisible(false);
+                    lblcod4.setVisible(false);
+                }
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+        }
         
         // TODO add your handling code here:
     }//GEN-LAST:event_btn1ActionPerformed
 
-    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-          lblcod.setText("0");
-    }//GEN-LAST:event_jButton29ActionPerformed
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+         if(this.ejer4.getNumeInte()>= 1)
+        {
+            numeroActual += 1;
+            pin += 0;
+            switch (numeroActual) {
+                    case 1:
+                         lblcod1.setVisible(true);
+                    break;
+                    case 2:
+                         lblcod2.setVisible(true);
+                    break;
+                    case 3:
+                         lblcod3.setVisible(true);
+                    break;
+                    case 4:
+                         lblcod4.setVisible(true);
+                    break;
+                default:
+                    
+            }
+            if(numeroActual == 4)
+            {
+           if(this.ejer4.getPin().equals(pin))
+                {
+                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    numeroActual =0;
+                    pin= "";
 
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-     lblcod.setText("7");
-    }//GEN-LAST:event_jButton26ActionPerformed
+                }
+                else
+                {
+                    int res = this.ejer4.getNumeInte(); 
+                    res = res -1;
+                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    numeroActual =0;
+                    pin= "";             
+                    this.ejer4.setNumeInte(res);
+                    lblcod1.setVisible(false);
+                    lblcod2.setVisible(false);
+                    lblcod3.setVisible(false);
+                    lblcod4.setVisible(false);
+                }
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+        }
+    }//GEN-LAST:event_btn0ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+    if(this.ejer4.getNumeInte()>= 1)
+        {
+            numeroActual += 1;
+            pin += 7;
+            switch (numeroActual) {
+                    case 1:
+                         lblcod1.setVisible(true);
+                    break;
+                    case 2:
+                         lblcod2.setVisible(true);
+                    break;
+                    case 3:
+                         lblcod3.setVisible(true);
+                    break;
+                    case 4:
+                         lblcod4.setVisible(true);
+                    break;
+                default:
+                    
+            }
+            if(numeroActual == 4)
+            {
+                if(this.ejer4.getPin().equals(pin))
+                {
+                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    numeroActual =0;
+                    pin= "";
+
+                }
+                else
+                {
+                    int res = this.ejer4.getNumeInte();
+                    res = res -1;
+                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    numeroActual =0;
+                    pin= "";             
+                    this.ejer4.setNumeInte(res);
+                    lblcod1.setVisible(false);
+                    lblcod2.setVisible(false);
+                    lblcod3.setVisible(false);
+                    lblcod4.setVisible(false);
+                }
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+        }
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        if(this.ejer4.getNumeInte()>= 1)
+        {
+            numeroActual += 1;
+            pin += 2;
+            switch (numeroActual) {
+                    case 1:
+                         lblcod1.setVisible(true);
+                    break;
+                    case 2:
+                         lblcod2.setVisible(true);
+                    break;
+                    case 3:
+                         lblcod3.setVisible(true);
+                    break;
+                    case 4:
+                         lblcod4.setVisible(true);
+                    break;
+                default:
+                    
+            }
+            if(numeroActual == 4)
+            {
+                if(this.ejer4.getPin().equals(pin))
+                {
+                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    numeroActual =0;
+                    pin= "";
+
+                }
+                else
+                {
+                    int res = this.ejer4.getNumeInte();
+                    res = res -1;
+                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    numeroActual =0;
+                    pin= "";             
+                    this.ejer4.setNumeInte(res);
+                    lblcod1.setVisible(false);
+                    lblcod2.setVisible(false);
+                    lblcod3.setVisible(false);
+                    lblcod4.setVisible(false);
+                }
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+        }
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+      if(this.ejer4.getNumeInte()>= 1)
+        {
+            numeroActual += 1;
+            pin += 3;
+            switch (numeroActual) {
+                    case 1:
+                         lblcod1.setVisible(true);
+                    break;
+                    case 2:
+                         lblcod2.setVisible(true);
+                    break;
+                    case 3:
+                         lblcod3.setVisible(true);
+                    break;
+                    case 4:
+                         lblcod4.setVisible(true);
+                    break;
+                default:
+                    
+            }
+            if(numeroActual == 4)
+            {
+                    if(this.ejer4.getPin().equals(pin))
+                {
+                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    numeroActual =0;
+                    pin= "";
+
+                }
+                else
+                {
+                    int res = this.ejer4.getNumeInte();
+                    res = res -1;
+                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    numeroActual =0;
+                      pin= "";             
+                    this.ejer4.setNumeInte(res);
+                    lblcod1.setVisible(false);
+                    lblcod2.setVisible(false);
+                    lblcod3.setVisible(false);
+                    lblcod4.setVisible(false);
+                }
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+        }
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+      if(this.ejer4.getNumeInte()>= 1)
+        {
+            numeroActual += 1;
+            pin += 5;
+            switch (numeroActual) {
+                    case 1:
+                         lblcod1.setVisible(true);
+                    break;
+                    case 2:
+                         lblcod2.setVisible(true);
+                    break;
+                    case 3:
+                         lblcod3.setVisible(true);
+                    break;
+                    case 4:
+                         lblcod4.setVisible(true);
+                    break;
+                default:
+                    
+            }
+            if(numeroActual == 4)
+            {
+                if(this.ejer4.getPin().equals(pin))
+                {
+                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    numeroActual =0;
+                    pin= "";
+
+                }
+                else
+                {
+                    int res = this.ejer4.getNumeInte();
+                    res = res -1;
+                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    numeroActual =0;
+                    pin= "";             
+                    this.ejer4.setNumeInte(res);
+                    lblcod1.setVisible(false);
+                    lblcod2.setVisible(false);
+                    lblcod3.setVisible(false);
+                    lblcod4.setVisible(false);
+                }
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+        }
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+       if(this.ejer4.getNumeInte()>= 1)
+        {
+            numeroActual += 1;
+            pin += 6;
+            switch (numeroActual) {
+                    case 1:
+                         lblcod1.setVisible(true);
+                    break;
+                    case 2:
+                         lblcod2.setVisible(true);
+                    break;
+                    case 3:
+                         lblcod3.setVisible(true);
+                    break;
+                    case 4:
+                         lblcod4.setVisible(true);
+                    break;
+                default:
+                    
+            }
+            if(numeroActual == 4)
+            {
+                if(this.ejer4.getPin().equals(pin))
+                {
+                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    numeroActual =0;
+                    pin= "";
+
+                }
+                else
+                {
+                    int res = this.ejer4.getNumeInte();
+                    res = res -1;
+                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    numeroActual =0;
+                    pin= "";             
+                    this.ejer4.setNumeInte(res);
+                    lblcod1.setVisible(false);
+                    lblcod2.setVisible(false);
+                    lblcod3.setVisible(false);
+                    lblcod4.setVisible(false);
+                }
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+        }
+
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActionPerformed
+     if(this.ejer4.getNumeInte()>= 1)
+        {
+            numeroActual += 1;
+            pin += 8;
+            switch (numeroActual) {
+                    case 1:
+                         lblcod1.setVisible(true);
+                    break;
+                    case 2:
+                         lblcod2.setVisible(true);
+                    break;
+                    case 3:
+                         lblcod3.setVisible(true);
+                    break;
+                    case 4:
+                         lblcod4.setVisible(true);
+                    break;
+                default:
+                    
+            }
+            if(numeroActual == 4)
+            {
+                if(this.ejer4.getPin().equals(pin))
+                {
+                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    numeroActual =0;
+                    pin= "";
+
+                }
+                else
+                {
+                    int res = this.ejer4.getNumeInte();
+                    res = res -1;
+                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    numeroActual =0;
+                   pin= "";             
+                    this.ejer4.setNumeInte(res);
+                    lblcod1.setVisible(false);
+                    lblcod2.setVisible(false);
+                    lblcod3.setVisible(false);
+                    lblcod4.setVisible(false);
+                }
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+        }
+    }//GEN-LAST:event_btnActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+      if(this.ejer4.getNumeInte()>= 1)
+        {
+            numeroActual += 1;
+            pin += 9;
+            switch (numeroActual) {
+                    case 1:
+                         lblcod1.setVisible(true);
+                    break;
+                    case 2:
+                         lblcod2.setVisible(true);
+                    break;
+                    case 3:
+                         lblcod3.setVisible(true);
+                    break;
+                    case 4:
+                         lblcod4.setVisible(true);
+                    break;
+                default:
+                    
+            }
+            if(numeroActual == 4)
+            {
+                if(this.ejer4.getPin().equals(pin))
+                {
+                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    numeroActual =0;
+                    pin= "";
+
+                }
+                else
+                {
+                    int res = this.ejer4.getNumeInte();
+                    res = res -1;
+                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    numeroActual =0;
+                    pin= "";             
+                    this.ejer4.setNumeInte(res);
+                    lblcod1.setVisible(false);
+                    lblcod2.setVisible(false);
+                    lblcod3.setVisible(false);
+                    lblcod4.setVisible(false);
+                }
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+        }
+    }//GEN-LAST:event_btn9ActionPerformed
 
     
     
@@ -263,19 +806,21 @@ public class FrmEjerc4 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn;
+    private javax.swing.JButton btn0;
     private javax.swing.JButton btn1;
     private javax.swing.JButton btn2;
     private javax.swing.JButton btn3;
     private javax.swing.JButton btn4;
     private javax.swing.JButton btn5;
     private javax.swing.JButton btn6;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton32;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn9;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblcod;
+    private javax.swing.JLabel lblcod1;
+    private javax.swing.JLabel lblcod2;
+    private javax.swing.JLabel lblcod3;
+    private javax.swing.JLabel lblcod4;
     // End of variables declaration//GEN-END:variables
 }
