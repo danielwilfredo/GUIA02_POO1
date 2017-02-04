@@ -55,7 +55,7 @@ public class FrmEjerc4 extends javax.swing.JFrame {
         lblcod4 = new javax.swing.JLabel();
         lblcod3 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Codigo Celular");
         setBackground(new java.awt.Color(0, 153, 153));
         setResizable(false);

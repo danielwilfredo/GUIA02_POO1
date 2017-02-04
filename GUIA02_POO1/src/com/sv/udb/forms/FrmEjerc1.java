@@ -41,6 +41,7 @@ public class FrmEjerc1 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Ingrese los numeros"));
 
         btnCancelar.setText("Cancelar");
