@@ -60,7 +60,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/0.png"))); // NOI18N
         jButton29.setBorder(null);
         jButton29.setBorderPainted(false);
-        jButton29.setContentAreaFilled(false);
         jButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton29ActionPerformed(evt);
@@ -69,7 +68,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
 
         jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/8.png"))); // NOI18N
         jButton27.setBorder(null);
-        jButton27.setContentAreaFilled(false);
         jButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton27ActionPerformed(evt);
@@ -79,16 +77,16 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/9.png"))); // NOI18N
         jButton28.setBorder(null);
         jButton28.setBorderPainted(false);
-        jButton28.setContentAreaFilled(false);
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton28ActionPerformed(evt);
             }
         });
 
+        btn5.setBackground(new java.awt.Color(0, 153, 153));
         btn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/5.png"))); // NOI18N
         btn5.setBorder(null);
-        btn5.setContentAreaFilled(false);
+        btn5.setBorderPainted(false);
         btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn5ActionPerformed(evt);
@@ -98,7 +96,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1.png"))); // NOI18N
         btn1.setBorder(null);
         btn1.setBorderPainted(false);
-        btn1.setContentAreaFilled(false);
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
@@ -108,7 +105,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/2.png"))); // NOI18N
         btn2.setBorder(null);
         btn2.setBorderPainted(false);
-        btn2.setContentAreaFilled(false);
         btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn2ActionPerformed(evt);
@@ -118,7 +114,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btnmulti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/multi.png"))); // NOI18N
         btnmulti.setBorder(null);
         btnmulti.setBorderPainted(false);
-        btnmulti.setContentAreaFilled(false);
         btnmulti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnmultiActionPerformed(evt);
@@ -128,7 +123,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btnresta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/resta.png"))); // NOI18N
         btnresta.setBorder(null);
         btnresta.setBorderPainted(false);
-        btnresta.setContentAreaFilled(false);
         btnresta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnrestaActionPerformed(evt);
@@ -138,7 +132,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btnsumar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/suma.png"))); // NOI18N
         btnsumar.setBorder(null);
         btnsumar.setBorderPainted(false);
-        btnsumar.setContentAreaFilled(false);
         btnsumar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsumarActionPerformed(evt);
@@ -148,7 +141,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btndivision.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1486210606_division.png"))); // NOI18N
         btndivision.setBorder(null);
         btndivision.setBorderPainted(false);
-        btndivision.setContentAreaFilled(false);
         btndivision.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btndivisionActionPerformed(evt);
@@ -158,7 +150,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btnigual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/igual.png"))); // NOI18N
         btnigual.setBorder(null);
         btnigual.setBorderPainted(false);
-        btnigual.setContentAreaFilled(false);
         btnigual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnigualActionPerformed(evt);
@@ -168,7 +159,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/4.png"))); // NOI18N
         btn4.setBorder(null);
         btn4.setBorderPainted(false);
-        btn4.setContentAreaFilled(false);
         btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn4ActionPerformed(evt);
@@ -178,7 +168,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/3.png"))); // NOI18N
         btn3.setBorder(null);
         btn3.setBorderPainted(false);
-        btn3.setContentAreaFilled(false);
         btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn3ActionPerformed(evt);
@@ -188,7 +177,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/6.png"))); // NOI18N
         btn6.setBorder(null);
         btn6.setBorderPainted(false);
-        btn6.setContentAreaFilled(false);
         btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn6ActionPerformed(evt);
@@ -198,7 +186,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/7.png"))); // NOI18N
         jButton26.setBorder(null);
         jButton26.setBorderPainted(false);
-        jButton26.setContentAreaFilled(false);
         jButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton26ActionPerformed(evt);
@@ -208,7 +195,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btnclear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/clear.png"))); // NOI18N
         btnclear.setBorder(null);
         btnclear.setBorderPainted(false);
-        btnclear.setContentAreaFilled(false);
         btnclear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnclearActionPerformed(evt);
@@ -218,7 +204,6 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/punto.png"))); // NOI18N
         jButton30.setBorder(null);
         jButton30.setBorderPainted(false);
-        jButton30.setContentAreaFilled(false);
         jButton30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton30ActionPerformed(evt);
@@ -315,7 +300,7 @@ public class FrmEjerc5 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 10, Short.MAX_VALUE))
+                .addGap(0, 14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -391,7 +376,7 @@ ejer5.resta(txtnumeros.getText());
     }//GEN-LAST:event_btnrestaActionPerformed
 
     private void btnmultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmultiActionPerformed
-ejer5.multiplicacion(txtnumeros.getText());
+    ejer5.multiplicacion(txtnumeros.getText());
     }//GEN-LAST:event_btnmultiActionPerformed
 
     /**

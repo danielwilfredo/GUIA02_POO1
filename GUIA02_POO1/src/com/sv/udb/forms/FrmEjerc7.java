@@ -43,11 +43,11 @@ public class FrmEjerc7 extends javax.swing.JFrame {
             String text = String.format("<html><div style='display:table'><div><div><strong> %s</strong> "
                 + "</div></div><div style='color:gray'>%s</div></div></html>", 
                     temp.getTitu(), temp.getDesc());
-            Object[] arre = new Object[2];
+          /*  Object[] arre = new Object[2];
             arre[0] = text;
             arre[1] = temp.getFech();
-            model.addRow(arre);
-//            model.addRow(new Object[]{text, temp.getFech()});
+            model.addRow(arre);*/
+           model.addRow(new Object[]{text, temp.getFech()});
         }
     }
     
@@ -66,8 +66,8 @@ public class FrmEjerc7 extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tbldatos = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        txtpostername = new javax.swing.JTextField();
+        txtdescripcion = new javax.swing.JTextArea();
+        txttitulo = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtpostername1 = new javax.swing.JTextField();
@@ -97,14 +97,19 @@ public class FrmEjerc7 extends javax.swing.JFrame {
             }
         });
         tbldatos.setRowHeight(40);
+        tbldatos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tbldatosMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tbldatos);
         if (tbldatos.getColumnModel().getColumnCount() > 0) {
             tbldatos.getColumnModel().getColumn(0).setResizable(false);
         }
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane2.setViewportView(jTextArea1);
+        txtdescripcion.setColumns(20);
+        txtdescripcion.setRows(5);
+        jScrollPane2.setViewportView(txtdescripcion);
 
         jLabel1.setFont(new java.awt.Font("Arial Unicode MS", 1, 14)); // NOI18N
         jLabel1.setText("Titulo: ");
@@ -126,14 +131,14 @@ public class FrmEjerc7 extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtpostername, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txttitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(35, 35, 35)
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtpostername1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel2)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 429, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 27, Short.MAX_VALUE))
+                .addGap(0, 45, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -141,7 +146,7 @@ public class FrmEjerc7 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtpostername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txttitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
                     .addComponent(txtpostername1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
@@ -149,7 +154,7 @@ public class FrmEjerc7 extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(85, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -162,11 +167,24 @@ public class FrmEjerc7 extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void tbldatosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbldatosMouseClicked
+        int rec = tbldatos.getSelectedRow();
+        //this.txttitulo.setEditable(false);
+        //this.txtdescripcion.setEditable(false);
+        Ejercicio7 eje7 = new Ejercicio7();
+        this.txttitulo.setText(eje7.getData().get(rec).getTitu());        
+        this.txtdescripcion.setText(eje7.getData().get(rec).getDesc());
+    //GEN-LAST:event_tblTodoMouseClicked
+       
+    }//GEN-LAST:event_tbldatosMouseClicked
 
     /**
      * @param args the command line arguments
@@ -210,9 +228,9 @@ public class FrmEjerc7 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTable tbldatos;
-    private javax.swing.JTextField txtpostername;
+    private javax.swing.JTextArea txtdescripcion;
     private javax.swing.JTextField txtpostername1;
+    private javax.swing.JTextField txttitulo;
     // End of variables declaration//GEN-END:variables
 }

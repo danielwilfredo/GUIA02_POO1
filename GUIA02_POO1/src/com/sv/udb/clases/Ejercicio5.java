@@ -12,7 +12,10 @@ package com.sv.udb.clases;
 public class Ejercicio5 {
    private String cade;
    private double resu;
-   private boolean suma, rest, mult, divi;
+   private boolean suma;
+   private boolean rest;
+   private boolean mult;
+   private boolean divi;
    
   public Ejercicio5(){
   cade="";
@@ -54,19 +57,23 @@ public class Ejercicio5 {
   {
       if (suma==true)
       {
-          resu=resu+Double.parseDouble(nume);
+          System.out.println("dentro de suma");
+          resu=(resu + (Double.parseDouble(nume)));
       }
-      else if(rest ==true)
+      else if(rest==true)
       {
-          resu=resu-Double.parseDouble(nume);
+          System.out.println("dentro de resta");
+          resu=(resu - (Double.parseDouble(nume)));
       }
       else if(mult==true)
       {
-          resu=resu*Double.parseDouble(nume);
+          System.out.println("dentro de multi");
+          resu = (resu * (Double.parseDouble(nume)));
       }
       else if(divi==true)
       {
-          resu=resu/Double.parseDouble(nume);
+          System.out.println("dentro de division");
+          resu= (resu / (Double.parseDouble(nume)));
       }
       return resu;
   }
