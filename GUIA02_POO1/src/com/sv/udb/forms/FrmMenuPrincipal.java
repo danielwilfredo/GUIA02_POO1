@@ -35,7 +35,7 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         btnEjercicio1 = new javax.swing.JMenu();
         btnEjercicio2 = new javax.swing.JMenu();
         btnEjercicio3 = new javax.swing.JMenu();
-        Ejercicio4 = new javax.swing.JMenu();
+        btnEjercicio4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Guia ejercicios 2 ::: Wilfredo Granados ");
@@ -59,8 +59,13 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         btnEjercicio3.setText("Ejercicio 3");
         jMenuBar1.add(btnEjercicio3);
 
-        Ejercicio4.setText("Ejercicio 4");
-        jMenuBar1.add(Ejercicio4);
+        btnEjercicio4.setText("Ejercicio 4");
+        btnEjercicio4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEjercicio4MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(btnEjercicio4);
 
         setJMenuBar(jMenuBar1);
 
@@ -88,6 +93,11 @@ FrmEjerc2 mostra2 = new FrmEjerc2();
 mostra2.setVisible(true);
 // TODO add your handling code here:
     }//GEN-LAST:event_btnEjercicio2MouseClicked
+
+    private void btnEjercicio4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEjercicio4MouseClicked
+        FrmEjerc4 eje4 = new FrmEjerc4();
+        eje4.setVisible(true);
+    }//GEN-LAST:event_btnEjercicio4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -125,10 +135,10 @@ mostra2.setVisible(true);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu Ejercicio4;
     private javax.swing.JMenu btnEjercicio1;
     private javax.swing.JMenu btnEjercicio2;
     private javax.swing.JMenu btnEjercicio3;
+    private javax.swing.JMenu btnEjercicio4;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
