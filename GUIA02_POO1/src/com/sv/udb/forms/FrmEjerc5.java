@@ -5,6 +5,8 @@
  */
 package com.sv.udb.forms;
 
+import com.sv.udb.clases.Ejercicio5;
+
 /**
  *
  * @author DanielWilfredo
@@ -14,6 +16,7 @@ public class FrmEjerc5 extends javax.swing.JFrame {
     /**
      * Creates new form FrmEjerc5
      */
+    Ejercicio5 ejer5 = new Ejercicio5();
     public FrmEjerc5() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -46,6 +49,7 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         jButton26 = new javax.swing.JButton();
         btnclear = new javax.swing.JButton();
         txtnumeros = new javax.swing.JTextField();
+        jButton30 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
@@ -66,15 +70,30 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/8.png"))); // NOI18N
         jButton27.setBorder(null);
         jButton27.setContentAreaFilled(false);
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
 
         jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/9.png"))); // NOI18N
         jButton28.setBorder(null);
         jButton28.setBorderPainted(false);
         jButton28.setContentAreaFilled(false);
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
 
         btn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/5.png"))); // NOI18N
         btn5.setBorder(null);
         btn5.setContentAreaFilled(false);
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
 
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1.png"))); // NOI18N
         btn1.setBorder(null);
@@ -90,21 +109,41 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btn2.setBorder(null);
         btn2.setBorderPainted(false);
         btn2.setContentAreaFilled(false);
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
 
         btnmulti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/multi.png"))); // NOI18N
         btnmulti.setBorder(null);
         btnmulti.setBorderPainted(false);
         btnmulti.setContentAreaFilled(false);
+        btnmulti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnmultiActionPerformed(evt);
+            }
+        });
 
         btnresta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/resta.png"))); // NOI18N
         btnresta.setBorder(null);
         btnresta.setBorderPainted(false);
         btnresta.setContentAreaFilled(false);
+        btnresta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnrestaActionPerformed(evt);
+            }
+        });
 
         btnsumar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/suma.png"))); // NOI18N
         btnsumar.setBorder(null);
         btnsumar.setBorderPainted(false);
         btnsumar.setContentAreaFilled(false);
+        btnsumar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsumarActionPerformed(evt);
+            }
+        });
 
         btndivision.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1486210606_division.png"))); // NOI18N
         btndivision.setBorder(null);
@@ -140,11 +179,21 @@ public class FrmEjerc5 extends javax.swing.JFrame {
         btn3.setBorder(null);
         btn3.setBorderPainted(false);
         btn3.setContentAreaFilled(false);
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
 
         btn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/6.png"))); // NOI18N
         btn6.setBorder(null);
         btn6.setBorderPainted(false);
         btn6.setContentAreaFilled(false);
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
 
         jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/7.png"))); // NOI18N
         jButton26.setBorder(null);
@@ -166,13 +215,23 @@ public class FrmEjerc5 extends javax.swing.JFrame {
             }
         });
 
+        jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/punto.png"))); // NOI18N
+        jButton30.setBorder(null);
+        jButton30.setBorderPainted(false);
+        jButton30.setContentAreaFilled(false);
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btn4)
@@ -186,43 +245,40 @@ public class FrmEjerc5 extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jButton28)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton29))
+                                .addComponent(btnmulti))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnigual))))
+                                .addComponent(btnresta, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn1)
-                            .addComponent(btnclear))
+                        .addComponent(btn1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnmulti)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnresta, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btndivision))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnsumar))))
-                    .addComponent(txtnumeros))
+                        .addComponent(btn2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnsumar))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtnumeros, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btndivision))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton29)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton30)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnclear)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnigual)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(txtnumeros, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnmulti)
-                    .addComponent(btnresta)
                     .addComponent(btndivision)
-                    .addComponent(btnclear))
+                    .addComponent(txtnumeros))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btn2)
@@ -234,21 +290,32 @@ public class FrmEjerc5 extends javax.swing.JFrame {
                     .addComponent(btn5)
                     .addComponent(btn4)
                     .addComponent(btn6)
-                    .addComponent(btnigual))
+                    .addComponent(btnresta))
                 .addGap(10, 10, 10)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton26, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton27)
-                    .addComponent(jButton28)
-                    .addComponent(jButton29))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jButton26, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jButton27)
+                                .addComponent(jButton28))
+                            .addComponent(btnmulti))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButton29)
+                            .addComponent(jButton30)
+                            .addComponent(btnclear)))
+                    .addComponent(btnigual, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 10, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -259,34 +326,73 @@ public class FrmEjerc5 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-     
+txtnumeros.setText(ejer5.Concatenar("0"));
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        
+txtnumeros.setText(ejer5.Concatenar("7"));        
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        // TODO add your handling code here:
+txtnumeros.setText(ejer5.Concatenar("4"));
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-
-      
-        // TODO add your handling code here:
+           txtnumeros.setText(ejer5.Concatenar("1"));
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btndivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndivisionActionPerformed
-        // TODO add your handling code here:
+ejer5.division(txtnumeros.getText());
     }//GEN-LAST:event_btndivisionActionPerformed
 
     private void btnigualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnigualActionPerformed
-        // TODO add your handling code here:
+txtnumeros.setText(""+ejer5.resultado(txtnumeros.getText()));
     }//GEN-LAST:event_btnigualActionPerformed
 
     private void btnclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnclearActionPerformed
-        // TODO add your handling code here:
+ejer5.Limpiar();
+txtnumeros.setText("");
     }//GEN-LAST:event_btnclearActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+txtnumeros.setText(ejer5.Concatenar("2"));
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+txtnumeros.setText(ejer5.Concatenar("3"));
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+txtnumeros.setText(ejer5.Concatenar("5"));
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+txtnumeros.setText(ejer5.Concatenar("6"));
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+txtnumeros.setText(ejer5.Concatenar("8"));
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+txtnumeros.setText(ejer5.Concatenar("9"));
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+txtnumeros.setText(ejer5.Concatenar("."));
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void btnsumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsumarActionPerformed
+ejer5.suma(txtnumeros.getText());
+    }//GEN-LAST:event_btnsumarActionPerformed
+
+    private void btnrestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrestaActionPerformed
+ejer5.resta(txtnumeros.getText());
+    }//GEN-LAST:event_btnrestaActionPerformed
+
+    private void btnmultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmultiActionPerformed
+ejer5.multiplicacion(txtnumeros.getText());
+    }//GEN-LAST:event_btnmultiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -340,6 +446,7 @@ public class FrmEjerc5 extends javax.swing.JFrame {
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
+    private javax.swing.JButton jButton30;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtnumeros;
     // End of variables declaration//GEN-END:variables

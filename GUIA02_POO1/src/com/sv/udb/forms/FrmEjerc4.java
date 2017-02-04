@@ -205,7 +205,7 @@ public class FrmEjerc4 extends javax.swing.JFrame {
                                 .addGap(2, 2, 2)
                                 .addComponent(lblcod4)))
                         .addGap(8, 8, 8)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -242,14 +242,16 @@ public class FrmEjerc4 extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         pack();
@@ -280,7 +282,7 @@ if(this.ejer4.getNumeInte()>= 1)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
-                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                 JOptionPane.showMessageDialog(this, "Pin correcto");
                     numeConta =0;
                     pin= "";
 
@@ -289,7 +291,7 @@ if(this.ejer4.getNumeInte()>= 1)
                 {
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
-                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    JOptionPane.showMessageDialog(this, "Pin incorrecto le quedan: " + res + " intentos");
                     numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
@@ -302,7 +304,7 @@ if(this.ejer4.getNumeInte()>= 1)
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+           JOptionPane.showMessageDialog(this, "Aplicacion Bloqueada, cierri y vuelva a abrir para intentar nuevamente");
         }        // TODO add your handling code here:
     }//GEN-LAST:event_btn4ActionPerformed
 
@@ -331,7 +333,7 @@ if(this.ejer4.getNumeInte()>= 1)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
-                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                 JOptionPane.showMessageDialog(this, "Pin correcto");
                     numeConta =0;
                     pin= "";
 
@@ -340,7 +342,7 @@ if(this.ejer4.getNumeInte()>= 1)
                 {
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
-                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    JOptionPane.showMessageDialog(this, "Pin incorrecto le quedan: " + res + " intentos");
                     numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
@@ -353,7 +355,7 @@ if(this.ejer4.getNumeInte()>= 1)
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+           JOptionPane.showMessageDialog(this, "Aplicacion Bloqueada, cierri y vuelva a abrir para intentar nuevamente");
         }
         
         // TODO add your handling code here:
@@ -384,7 +386,7 @@ if(this.ejer4.getNumeInte()>= 1)
             {
            if(this.ejer4.getPin().equals(pin))
                 {
-                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    JOptionPane.showMessageDialog(this, "Pin correcto");
                     numeConta =0;
                     pin= "";
 
@@ -393,7 +395,7 @@ if(this.ejer4.getNumeInte()>= 1)
                 {
                     int res = this.ejer4.getNumeInte(); 
                     res = res -1;
-                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    JOptionPane.showMessageDialog(this, "Pin incorrecto le quedan: " + res + " intentos");
                     numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
@@ -406,7 +408,7 @@ if(this.ejer4.getNumeInte()>= 1)
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+           JOptionPane.showMessageDialog(this, "Aplicacion Bloqueada, cierri y vuelva a abrir para intentar nuevamente");
         }
     }//GEN-LAST:event_btn0ActionPerformed
 
@@ -435,7 +437,7 @@ if(this.ejer4.getNumeInte()>= 1)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
-                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                     JOptionPane.showMessageDialog(this, "Pin correcto");
                     numeConta =0;
                     pin= "";
 
@@ -444,7 +446,7 @@ if(this.ejer4.getNumeInte()>= 1)
                 {
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
-                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    JOptionPane.showMessageDialog(this, "Pin incorrecto le quedan: " + res + " intentos");
                     numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
@@ -457,7 +459,7 @@ if(this.ejer4.getNumeInte()>= 1)
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+           JOptionPane.showMessageDialog(this, "Aplicacion Bloqueada, cierri y vuelva a abrir para intentar nuevamente");
         }
     }//GEN-LAST:event_btn7ActionPerformed
 
@@ -486,7 +488,7 @@ if(this.ejer4.getNumeInte()>= 1)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
-                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                   JOptionPane.showMessageDialog(this, "Pin correcto");
                     numeConta =0;
                     pin= "";
 
@@ -495,7 +497,7 @@ if(this.ejer4.getNumeInte()>= 1)
                 {
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
-                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    JOptionPane.showMessageDialog(this, "Pin incorrecto le quedan: " + res + " intentos");
                     numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
@@ -508,7 +510,7 @@ if(this.ejer4.getNumeInte()>= 1)
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+            JOptionPane.showMessageDialog(this, "Aplicacion Bloqueada, cierri y vuelva a abrir para intentar nuevamente");
         }
     }//GEN-LAST:event_btn2ActionPerformed
 
@@ -537,7 +539,7 @@ if(this.ejer4.getNumeInte()>= 1)
             {
                     if(this.ejer4.getPin().equals(pin))
                 {
-                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                JOptionPane.showMessageDialog(this, "Pin correcto");
                     numeConta =0;
                     pin= "";
 
@@ -546,7 +548,7 @@ if(this.ejer4.getNumeInte()>= 1)
                 {
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
-                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    JOptionPane.showMessageDialog(this, "Pin incorrecto le quedan: " + res + " intentos");
                     numeConta =0;
                       pin= "";             
                     this.ejer4.setNumeInte(res);
@@ -559,7 +561,7 @@ if(this.ejer4.getNumeInte()>= 1)
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+           JOptionPane.showMessageDialog(this, "Aplicacion Bloqueada, cierri y vuelva a abrir para intentar nuevamente");
         }
     }//GEN-LAST:event_btn3ActionPerformed
 
@@ -588,7 +590,7 @@ if(this.ejer4.getNumeInte()>= 1)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
-                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                   JOptionPane.showMessageDialog(this, "Pin correcto");
                     numeConta =0;
                     pin= "";
 
@@ -597,7 +599,7 @@ if(this.ejer4.getNumeInte()>= 1)
                 {
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
-                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    JOptionPane.showMessageDialog(this, "Pin incorrecto le quedan: " + res + " intentos");
                     numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
@@ -610,7 +612,7 @@ if(this.ejer4.getNumeInte()>= 1)
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+            JOptionPane.showMessageDialog(this, "Aplicacion Bloqueada, cierri y vuelva a abrir para intentar nuevamente");
         }
     }//GEN-LAST:event_btn5ActionPerformed
 
@@ -639,7 +641,7 @@ if(this.ejer4.getNumeInte()>= 1)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
-                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                 JOptionPane.showMessageDialog(this, "Pin correcto");
                     numeConta =0;
                     pin= "";
 
@@ -648,7 +650,7 @@ if(this.ejer4.getNumeInte()>= 1)
                 {
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
-                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    JOptionPane.showMessageDialog(this, "Pin incorrecto le quedan: " + res + " intentos");
                     numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
@@ -661,7 +663,7 @@ if(this.ejer4.getNumeInte()>= 1)
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+           JOptionPane.showMessageDialog(this, "Aplicacion Bloqueada, cierri y vuelva a abrir para intentar nuevamente");
         }
 
     }//GEN-LAST:event_btn6ActionPerformed
@@ -691,7 +693,7 @@ if(this.ejer4.getNumeInte()>= 1)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
-                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+             JOptionPane.showMessageDialog(this, "Pin correcto");
                     numeConta =0;
                     pin= "";
 
@@ -700,7 +702,7 @@ if(this.ejer4.getNumeInte()>= 1)
                 {
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
-                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    JOptionPane.showMessageDialog(this, "Pin incorrecto le quedan: " + res + " intentos");
                     numeConta =0;
                    pin= "";             
                     this.ejer4.setNumeInte(res);
@@ -713,7 +715,7 @@ if(this.ejer4.getNumeInte()>= 1)
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+            JOptionPane.showMessageDialog(this, "Aplicacion Bloqueada, cierri y vuelva a abrir para intentar nuevamente");
         }
     }//GEN-LAST:event_btnActionPerformed
 
@@ -742,7 +744,7 @@ if(this.ejer4.getNumeInte()>= 1)
             {
                 if(this.ejer4.getPin().equals(pin))
                 {
-                    JOptionPane.showMessageDialog(this, "Codigo correcto");
+                    JOptionPane.showMessageDialog(this, "Pin correcto");
                     numeConta =0;
                     pin= "";
 
@@ -751,7 +753,7 @@ if(this.ejer4.getNumeInte()>= 1)
                 {
                     int res = this.ejer4.getNumeInte();
                     res = res -1;
-                    JOptionPane.showMessageDialog(this, "Codigo incorrecto le quedan: " + res + " intentos");
+                    JOptionPane.showMessageDialog(this, "Pin incorrecto le quedan: " + res + " intentos");
                     numeConta =0;
                     pin= "";             
                     this.ejer4.setNumeInte(res);
@@ -764,7 +766,7 @@ if(this.ejer4.getNumeInte()>= 1)
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "No le quedan intentos reinicie la aplicacion");
+           JOptionPane.showMessageDialog(this, "Aplicacion Bloqueada, cierri y vuelva a abrir para intentar nuevamente");
         }
     }//GEN-LAST:event_btn9ActionPerformed
 
