@@ -60,6 +60,11 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(btnEjercicio2);
 
         btnEjercicio3.setText("Ejercicio 3");
+        btnEjercicio3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEjercicio3MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(btnEjercicio3);
 
         btnEjercicio4.setText("Ejercicio 4");
@@ -131,6 +136,11 @@ ejer5.setVisible(true);
 FrmEjerc7 ejer7 = new FrmEjerc7();
 ejer7.setVisible(true);
     }//GEN-LAST:event_btnEjercicio7MouseClicked
+
+    private void btnEjercicio3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEjercicio3MouseClicked
+
+// TODO add your handling code here:
+    }//GEN-LAST:event_btnEjercicio3MouseClicked
 
     /**
      * @param args the command line arguments

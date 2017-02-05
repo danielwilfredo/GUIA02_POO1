@@ -55,32 +55,41 @@ public class Ejercicio5 {
   }
   public double resultado(String nume)
   {
-      if (suma==true)
-      {
-          System.out.println("dentro de suma");
+      try {
+          if (suma==true)
+      {          
           resu=(resu + (Double.parseDouble(nume)));
+          suma=false;
       }
       else if(rest==true)
       {
-          System.out.println("dentro de resta");
+          
           resu=(resu - (Double.parseDouble(nume)));
+            rest=false;
       }
       else if(mult==true)
       {
-          System.out.println("dentro de multi");
+         
           resu = (resu * (Double.parseDouble(nume)));
+            mult=false;
       }
       else if(divi==true)
       {
-          System.out.println("dentro de division");
+          
           resu= (resu / (Double.parseDouble(nume)));
+          divi=false;
       }
+          
+      } catch (Exception e) {
+          System.out.println("Hubo un error." + e.getMessage());
+      }
+      
       return resu;
   }
   public String Limpiar()
   {
       this.cade = "";
-      return cade;
+       return cade;
   }
     
 }
