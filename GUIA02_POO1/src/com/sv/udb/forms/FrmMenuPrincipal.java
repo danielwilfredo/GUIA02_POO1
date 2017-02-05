@@ -6,6 +6,7 @@
 package com.sv.udb.forms;
 
 import com.sv.udb.clases.Ejercicio1;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -84,6 +85,11 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(btnEje5);
 
         jMenu1.setText("Ejercicio 6");
+        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu1MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu1);
 
         btnEjercicio7.setText("Ejercicio 7");
@@ -138,9 +144,14 @@ ejer7.setVisible(true);
     }//GEN-LAST:event_btnEjercicio7MouseClicked
 
     private void btnEjercicio3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEjercicio3MouseClicked
-
+JOptionPane.showMessageDialog(null, "Este ejercicio no esta:(");
 // TODO add your handling code here:
     }//GEN-LAST:event_btnEjercicio3MouseClicked
+
+    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
+JOptionPane.showMessageDialog(null, "Este ejercicio no esta:(");
+// TODO add your handling code here:
+    }//GEN-LAST:event_jMenu1MouseClicked
 
     /**
      * @param args the command line arguments
